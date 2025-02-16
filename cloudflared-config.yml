@@ -1,0 +1,7 @@
+tunnel: my-tunnel
+credentials-file: /app/.cloudflared/my-tunnel.json
+
+ingress:
+  - hostname: glitch.gl.edu.eu.org
+    service: http://localhost:3000
+  - service: http_status:404
